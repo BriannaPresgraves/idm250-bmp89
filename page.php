@@ -3,6 +3,10 @@
     <?php echo get_the_title(); ?>
 </h1>
 
-<p> This is a front-page.php template</p>
+<div class="content">
+<?php
+echo get_the_content();
+?>
+</div>
 
 <?php get_footer(); ?>
