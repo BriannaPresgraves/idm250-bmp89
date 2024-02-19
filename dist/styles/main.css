@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+#menu-primary-2024-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu-primary-2024-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+
+}
+
+#menu-item-19, #menu-item-28, #menu-item-20, #menu-item-21 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    padding: .5rem;
+    height: 100px;
+    width: 400px;
+}
