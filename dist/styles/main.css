@@ -123,7 +123,6 @@ header {
 }
 
 .content h3 {
-  margin-left: 3px;
   font-size: 23px;
   margin: 1rem;
   font-weight: bold;
@@ -133,11 +132,9 @@ header {
 .content ul {
   font-size: 16px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin-left: 6px;
 }
 
 .content h4 {
-  margin-left: 6px;
   font-size: 21px;
   margin: 1rem;
   font-weight: bold;
@@ -149,5 +146,8 @@ header {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bold;
   margin-top: 1rem;
-  margin-left: 6px;
+}
+
+footer {
+  margin-top: 1rem;
 }
