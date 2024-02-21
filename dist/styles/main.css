@@ -62,8 +62,9 @@ header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     font-size: 26px;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-bottom: 1rem;
+    font-weight: bold;
 }
 
 .content p {
@@ -73,16 +74,29 @@ header {
 }
 
 .wp-block-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.wp-block-image img {
+.wp-image-43 {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 405px;
+}
+
+.wp-image-60 {
+    display: block;
+    height: 405px;
+}
+
+.wp-element-caption {
+  color: #363434;
+  font-size: 12px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
 }
 
 .wp-block-quote {
@@ -106,4 +120,34 @@ header {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 19px;
   padding-left: 15px;
+}
+
+.content h3 {
+  margin-left: 3px;
+  font-size: 23px;
+  margin: 1rem;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content ul {
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 6px;
+}
+
+.content h4 {
+  margin-left: 6px;
+  font-size: 21px;
+  margin: 1rem;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content ol {
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-left: 6px;
 }
