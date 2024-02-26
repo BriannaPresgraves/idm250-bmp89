@@ -148,6 +148,10 @@ header {
   margin-top: 1rem;
 }
 
+.content ol + p {
+  margin-bottom: 20px;
+}
+
 footer {
   margin-top: 1rem;
 }
