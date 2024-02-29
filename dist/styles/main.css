@@ -50,7 +50,7 @@ header {
   padding: 0 20px;
 }
 
-.content h1 {
+h1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 32px;
   display: flex;
@@ -61,7 +61,7 @@ header {
 .content h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 27px;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     font-weight: bold;
@@ -123,8 +123,9 @@ header {
 }
 
 .content h3 {
-  font-size: 23px;
+  font-size: 24px;
   margin: 1rem;
+  margin-left: 0;
   font-weight: bold;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -135,21 +136,41 @@ header {
 }
 
 .content h4 {
-  font-size: 21px;
+  font-size: 22px;
+  margin: 1rem;
+  margin-left: 0;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content h5 {
+  font-size: 18px;
   margin: 1rem;
   font-weight: bold;
+  margin-left: 0;
+  margin-bottom: 8px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content h6 {
+  font-size: 16px;
+  margin: 1rem;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .content ol {
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bold;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .content ol + p {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 8px;
 }
 
 footer {
