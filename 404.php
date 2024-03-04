@@ -3,29 +3,12 @@
 <div>
   <div class="error">
     <div class="pageerror">
-      <p class="text-9xl font-semibold leading-8 text-indigo-900 mb-10">404</p>
-      <h1 class="mt-4 text-lg font-bold tracking-tight sm:text-5xl">Oops! Page Not found</h1>
-      <p class="mt-4 text-base leading-7 sm:mt-6 sm:text-lg sm:leading-8">The page you are looking for does not exist.</p>
+      <p class="number">404</p>
+      <h1 class="oops">Oops! Page Not found</h1>
+      <p class="message">The page you are looking for does not exist.</p>
     </div>
-      <div class="mt-10 flex justify-center">
-        <a href="https://bmp89.net/idm250/" class="text-sm font-semibold leading-6 text-indigo-900">
-          <span aria-hidden="true">&larr;</span>
-          Back to home
-        </a>
-      </div>
-  </div>
-</div>
-<?php get_footer(); ?>
-
-<?php get_header('simple'); ?>
-
-    <div class="mx-auto mt-20 max-w-2xl text-center sm:mt-24">
-      <p class="text-9xl font-semibold leading-8 text-indigo-900 mb-10">404</p>
-      <h1 class="mt-4 text-lg font-bold tracking-tight sm:text-5xl">Oops! Page Not found</h1>
-      <p class="mt-4 text-base leading-7 sm:mt-6 sm:text-lg sm:leading-8">The page you are looking for does not exist.</p>
-    </div>
-      <div class="mt-10 flex justify-center">
-        <a href="https://bmp89.net/idm250/" class="text-sm font-semibold leading-6 text-indigo-900">
+      <div class="link">
+        <a href="https://bmp89.net/idm250/" class="backlink">
           <span aria-hidden="true">&larr;</span>
           Back to home
         </a>
