@@ -2,6 +2,17 @@
     box-sizing: border-box;
 }
 
+.error {
+  margin-left:auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 80rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+}
+
 #menu-primary-2024-menu {
     display: flex;
     flex-direction: row;
