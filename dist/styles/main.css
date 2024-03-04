@@ -249,6 +249,18 @@ table {
   margin-top: 8px;
 }
 
+.content .wp-block-buttons {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: #4338ca;
+  margin: .25rem;
+  padding: .25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 footer {
   margin-top: 1rem;
 }
