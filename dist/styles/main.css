@@ -179,6 +179,15 @@ h1 {
   padding-left: 15px;
 }
 
+.content td {
+  font-size: 16px;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+}
+
 .content h3 {
   font-size: 24px;
   margin: 1rem;
