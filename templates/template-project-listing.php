@@ -1,9 +1,19 @@
 <?php
 /* Template Name: Blog Listing */
 
-get_header();
+get_header(); ?>
 
+<h1 class="text-3xl my-8 text-center">
+    <?php echo get_the_title(); ?>
+</h1>
 
+<div class="listing">
+<?php
+echo get_the_content();
+?>
+</div>
+
+<?php
 $image = get_featured_image_data(get_the_ID());
 // Query terms for current post and return an array of term IDs
 $categoryIds = wp_get_post_terms(get_the_ID(), 'category', ['fields' => 'ids']); // [3, 10]
