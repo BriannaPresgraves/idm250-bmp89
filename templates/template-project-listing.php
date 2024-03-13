@@ -29,18 +29,18 @@ $related_posts = new WP_Query([
 ?>
 
 <?php if ($related_posts->have_posts()) : ?>
-<section class="listing-section">
-  <div class="listing-container-style">
-    <div class="listing-grid">
+<section class="listing-posts">
+  <div class="listing-container">
+    <div class="posts-grid">
       <?php while ($related_posts->have_posts()) : $related_posts->the_post(); ?>
       <div class="post-background">
         <a href="<?php the_permalink(); ?>">
-        <?php the_post_thumbnail('thumbnail', ['class' => 'listing-image-style']); ?>
-          <h4 class="listing-post-category">
+        <?php the_post_thumbnail('thumbnail', ['class' => 'listing-image']); ?>
+          <h4 class="listing-category">
             <?php echo get_the_category_list(); ?> </h4>
-          <h3 class="listing-post-title">
+          <h3 class="listing-title">
             <?php echo get_the_title(); ?></h3>
-          <h5 class="listing-post-author">
+          <h5 class="listing-author">
             By: Brianna Presgraves </h5>
           </p>
         </a>
