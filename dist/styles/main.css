@@ -132,11 +132,9 @@ header {
 
 .post-background {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin: .5rem;
-  padding: 1rem;
+  padding: 1.4rem;
   color: white;
   background-color: #293B7A;
   border: black solid 1px;
@@ -146,8 +144,8 @@ header {
 }
 
 .wp-post-image {
-  width: 250px;
-  height: 230px;
+  width: 240px;
+  height: 250px;
   object-fit: cover;
   display: block;
   margin: 0 auto;
@@ -158,10 +156,13 @@ header {
 
 .listing-category {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-style: italic;
-  margin-top: 5px;
-  text-align: left;
+  margin-top: 10px;
+}
+
+.listing-title, .listing-author {
+  text-align: center;
 }
 
 .content {

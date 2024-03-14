@@ -30,14 +30,13 @@ $related_posts = new WP_Query([
       <div class="post-background">
         <a href="<?php the_permalink(); ?>">
         <?php the_post_thumbnail('thumbnail'); ?>
-          <h4 class="listing-category">
-            <?php echo get_the_category_list(); ?> </h4>
           <h3 class="listing-title">
             <?php echo get_the_title(); ?></h3>
+        </a>
           <h5 class="listing-author">
             By: Brianna Presgraves </h5>
-          </p>
-        </a>
+            <h6 class="listing-category">
+            <?php echo get_the_category_list(); ?> </h6>
       </div>
       <?php endwhile; ?>
     </div>
