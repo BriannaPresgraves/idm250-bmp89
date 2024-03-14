@@ -7,12 +7,6 @@ get_header(); ?>
     <?php echo get_the_title(); ?>
 </h1>
 
-<div class="listing">
-<?php
-echo get_the_content();
-?>
-</div>
-
 <?php
 $image = get_featured_image_data(get_the_ID());
 // Query terms for current post and return an array of term IDs
@@ -30,12 +24,12 @@ $related_posts = new WP_Query([
 
 <?php if ($related_posts->have_posts()) : ?>
 <section class="listing-posts">
-  <div class="listing-container">
-    <div class="posts-grid">
+  <div class="posts-container">
+    <div class="posts-layout">
       <?php while ($related_posts->have_posts()) : $related_posts->the_post(); ?>
       <div class="post-background">
         <a href="<?php the_permalink(); ?>">
-        <?php the_post_thumbnail('thumbnail', ['class' => 'listing-image']); ?>
+        <?php the_post_thumbnail('thumbnail'); ?>
           <h4 class="listing-category">
             <?php echo get_the_category_list(); ?> </h4>
           <h3 class="listing-title">
