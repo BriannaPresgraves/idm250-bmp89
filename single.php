@@ -22,5 +22,6 @@ echo get_the_content();
 ?>
 </div>
 
+<?php get_template_part('components/related-posts'); ?>
 
 <?php get_footer(); ?>
