@@ -3,7 +3,9 @@
     <?php echo get_the_title(); ?>
 </h1>
 
-<div class="content">
+<?php get_template_part('components/latest-posts'); ?>
+
+<div class="home">
 <?php
 echo get_the_content();
 ?>
