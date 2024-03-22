@@ -4,18 +4,23 @@
 get_header();
 
 ?>
-<h1>
+<h1 class="text-3xl my-8">
   <?php echo get_the_title(); ?>
 </h1>
 
-<p>This is a custom template called page with sidebar</p>
-<main class="flex flex-row">
-  <div class="w-2/3">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt eius sint voluptas soluta deserunt dignissimos,
-    ratione quod, quasi laborum aperiam ex modi a obcaecati explicabo quibusdam voluptate iusto animi sed?
+<main class="flex w-full mx-auto max-w-7xl mt-10">
+  <div class="content" id="side">
+    <?php
+    echo get_the_content();
+    ?>
   </div>
-  <aside class="w-1/3">
-    sidebar
+  <aside class="sidebar">
+  <?php
+    // output the sidebar main_sidebar
+    if (is_active_sidebar('right_sidebar')) :
+        dynamic_sidebar('right_sidebar');
+    endif;
+?>
   </aside>
 </main>
 <?php get_footer(); ?>

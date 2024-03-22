@@ -77,7 +77,7 @@ a:hover {
 
 }
 
-#menu-item-19, #menu-item-28, #menu-item-20, #menu-item-21 {
+#menu-item-160, #menu-item-28, #menu-item-20, #menu-item-21 {
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -190,6 +190,17 @@ h1 {
   display: flex;
   justify-content: center;
   margin: 1rem;
+}
+
+#side {
+  width: 70%;
+  border-left: 1px solid #293B7A;
+}
+
+.sidebar {
+  width: 30%;
+  background-color: #E6E5E1;
+  overflow: hidden;
 }
 
 .content h2 {
@@ -367,7 +378,7 @@ footer {
 
 @media only screen and (max-width: 999px) {
 
-#menu-item-19, #menu-item-28, #menu-item-20, #menu-item-21 {
+#menu-item-160, #menu-item-28, #menu-item-20, #menu-item-21 {
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -453,7 +464,7 @@ header {
 
 @media only screen and (max-width: 405px) {
 
-  #menu-item-19, #menu-item-28, #menu-item-20, #menu-item-21 {
+  #menu-item-160, #menu-item-28, #menu-item-20, #menu-item-21 {
       margin-left: 30px;
       margin-right: 30px;
   }
@@ -536,7 +547,7 @@ header {
 
   @media only screen and (max-width: 345px) {
 
-    #menu-item-19, #menu-item-28, #menu-item-20, #menu-item-21 {
+    #menu-item-160, #menu-item-28, #menu-item-20, #menu-item-21 {
         margin-left: 20px;
         margin-right: 20px;
         font-size: 16px;
