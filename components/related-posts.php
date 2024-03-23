@@ -26,7 +26,9 @@ $related_posts = new WP_Query([
       <?php while ($related_posts->have_posts()) : $related_posts->the_post(); ?>
       <div class="post-background">
         <a href="<?php the_permalink(); ?>">
-        <?php the_post_thumbnail('thumbnail'); ?>
+        <?php         if (has_post_thumbnail()) {
+            the_post_thumbnail();
+        } ?>
           <h3 class="listing-title">
             <?php echo get_the_title(); ?></h3>
         </a>

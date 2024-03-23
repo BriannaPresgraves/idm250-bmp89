@@ -16,7 +16,6 @@ $categoryIds = wp_get_post_terms(get_the_ID(), 'category', ['fields' => 'ids']);
 $related_posts = new WP_Query([
     'post_type' => 'post',
     'posts_per_page' =>6,
-    'post__not_in' => [get_the_ID()],
 
 ]);
 
@@ -29,7 +28,9 @@ $related_posts = new WP_Query([
       <?php while ($related_posts->have_posts()) : $related_posts->the_post(); ?>
       <div class="post-background">
         <a href="<?php the_permalink(); ?>">
-        <?php the_post_thumbnail('thumbnail'); ?>
+        <?php         if (has_post_thumbnail()) {
+            the_post_thumbnail();
+        } ?>
           <h3 class="listing-title">
             <?php echo get_the_title(); ?></h3>
         </a>

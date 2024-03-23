@@ -18,16 +18,16 @@ if ($query_trending->have_posts()) {
 
         echo '<div class="grid-column">';
 
-        echo '<a href="' . esc_url($permalink) . '" class="grid-column-link">';
+        echo '<a href="' . esc_url($permalink) . '">';
         if (has_post_thumbnail()) {
             the_post_thumbnail();
         }
         echo '</a>';
 
-        echo '<h4 class="home-post-category">' . get_the_category_list() . '</h4>';
         echo '<h3 class="home-post-title">' . get_the_title() . '</h3>';
-        echo '<h5 class="home-post-author">By: ' . get_the_author() . '</h5>';
-        echo '<h5 class="home-post-excerpt">By: ' . get_the_excerpt() . '</h5>';
+        echo '<h5 class="home-post-author">' . get_the_author() . '</h5>';
+        echo '<p class="home-post-excerpt">' . get_the_excerpt() . '<p>';
+        echo '<h4 class="home-post-category">' . get_the_category_list() . '</h4>';
         echo '</div>';
     }
     echo '</div>';
