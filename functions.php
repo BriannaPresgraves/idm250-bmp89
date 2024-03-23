@@ -23,9 +23,5 @@ function add_widgets()
         'id' => 'right_sidebar',
     ]);
 
-    register_sidebar([
-        'name' => 'Left Sidebar',
-        'id' => 'left_sidebar',
-    ]);
 }
 add_action('widgets_init', 'add_widgets');

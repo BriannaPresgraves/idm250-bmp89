@@ -7,15 +7,20 @@ $categoryIds = wp_get_post_terms(get_the_ID(), 'category', ['fields' => 'ids']);
 $related_posts = new WP_Query([
   'post_type' => 'post',
   'posts_per_page' => 3,
-  'orderby'        => 'date',
-  'order'          => 'DESC',
-
+  'post__not_in' => [get_the_ID()],
+  'tax_query' => [
+      [
+          'taxonomy' => 'category',
+          'field' => 'term_id',
+          'terms' => $categoryIds,
+      ],
+  ],
 ]);
 
 ?>
 
 <?php if ($related_posts->have_posts()) : ?>
-<h2 class="latesth2"> Latest Posts </h2>
+  <h2 class="relatedh2"> Related Posts </h2>
 <section class="listing-posts">
   <div class="posts-container">
     <div class="posts-layout">
