@@ -6,34 +6,29 @@ $categoryIds = wp_get_post_terms(get_the_ID(), 'category', ['fields' => 'ids']);
 // custom wp query to get related posts for current category
 $related_posts = new WP_Query([
   'post_type' => 'post',
-  'posts_per_page' => 3,
-  'post__not_in' => [get_the_ID()],
-  'tax_query' => [
-      [
-          'taxonomy' => 'category',
-          'field' => 'term_id',
-          'terms' => $categoryIds,
-      ],
-  ],
+  'posts_per_page' => 5,
+  'orderby'        => 'date',
+  'order'          => 'DESC',
+
 ]);
 
 ?>
 
 <?php if ($related_posts->have_posts()) : ?>
-  <h2 class="relatedh2"> Related Posts </h2>
+<h2 class="latesth2"> Latest Posts </h2>
 <section class="listing-posts">
   <div class="posts-container">
-    <div class="posts-layout">
+    <div class="post-layout">
       <?php while ($related_posts->have_posts()) : $related_posts->the_post(); ?>
-      <div class="post-background">
+      <div class="posts-background">
         <a href="<?php the_permalink(); ?>">
+        <div class="thumbnail">
         <?php the_post_thumbnail('thumbnail'); ?>
-          <h3 class="listing-title">
+        </div>
+          <h3 class="listings-title">
             <?php echo get_the_title(); ?></h3>
         </a>
-          <p class="listing-author">
-          <?php echo get_the_author(); ?> </p>
-            <h6 class="listing-category">
+            <h6 class="listings-category">
             <?php echo get_the_category_list(); ?> </h6>
       </div>
       <?php endwhile; ?>

@@ -16,7 +16,7 @@ get_header();
     ?>
 </div>
 
-<main class="flex w-full mx-auto max-w-7xl mt-10">
+<main class="side-layout">
   <div class="content" id="side">
     <?php
     echo get_the_content();
@@ -28,7 +28,7 @@ get_header();
         dynamic_sidebar('right_sidebar');
     endif;
 ?>
-    <?php get_template_part('components/related-posts-sidebar');?>
+    <?php get_template_part('components/latest-sidebar');?>
   </aside>
 </main>
 <?php get_footer(); ?>
